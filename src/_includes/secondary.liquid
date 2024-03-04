@@ -1,0 +1,8 @@
+<p>This is the {{ title }}</p>
+<ul>
+    {% for item in collections.secondary %}
+    {% if item.data.fileslug == title %}
+    <li><a href="{{item.url}}">{{item.data.title}}</a></li>
+    {% endif %}
+    {% endfor %}
+</ul>

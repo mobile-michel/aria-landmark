@@ -1,0 +1,17 @@
+---
+layout: base
+---
+{% include 'header' %}
+<main>
+  {% if fileslug %}
+  {% include 'aside' %}
+  {% endif %}
+  <section aria-labelledby="{{ title | remove:" " }}">
+    <h1 id="{{ title | remove:" " }}">{{ title | capitalize }}</h1>
+    {{ content }}
+  </section>
+  {% if fileslug %}
+  {% include 'pagination' %}
+  {% endif %}
+</main>
+{% include 'footer' %}

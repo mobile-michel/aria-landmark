@@ -1,0 +1,21 @@
+{
+  "name": "aria-landmark",
+  "version": "1.0.0",
+  "description": "Eleventy 2.0.1, Liquid, Simple.css & ARIA landmarks",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "eleventy",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": [
+    "eleventy",
+    "liquid",
+    "simple.css"
+],
+  "author": "Michel Maillard",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

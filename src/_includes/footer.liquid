@@ -1,0 +1,18 @@
+<footer role="contentinfo">
+    <div class="newsletter">
+        <h3 id="newsletter-subscribe-form-heading">Subscribe to the newsletter</h3>
+        <form aria-labelledby="newsletter-subscribe-form-heading" name="newsletter" action="/subscribe" type="post">
+            <label for="email">Please provide your email address</label>
+            <input type="email" id="email" name="email" />
+            <button type="submit">Subscribe Me</button>
+        </form>
+    </div>
+    <nav aria-label="Footer">
+    <ul>
+      {% for i in collections.primary %}
+      <li><a href="{{i.url}}" {% if page.url==i.url %}aria-current="page"{% endif %}>{{i.data.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+    <small>&copy; {{ "now" | date: "%Y" }} Built with <a href="https://www.11ty.dev/">Eleventy</a> & <a href="https://shopify.github.io/liquid/">Liquid</a> & <a href="https://simplecss.org">Simple.css</a> • <a href="{{site.authorUrl}}">{{site.authorName}}</a> • <a href="{{site.github}}">GitHub repo</a></small>
+</footer>

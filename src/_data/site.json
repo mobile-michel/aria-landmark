@@ -1,0 +1,12 @@
+{
+    "name": "01-basic-liquid-simple",
+    "description": "Eleventy 2.0.1 basic template with Liquid templating & Simple CSS framework.",
+    "github": "https://github.com/mobile-michel/01-basic-liquid-simple",
+    "authorName": "Michel Maillard",
+    "authorUrl": "https://michelmaillard.ch/",
+    "favicon": "https://11ty.recipes/images/meta/favicon.svg",
+    "css1": "https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css",
+    "css2": "https://classless.de/classless.css",
+    "css3": "https://unpkg.com/mvp.css",
+    "css4": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.lime.min.css"
+}
