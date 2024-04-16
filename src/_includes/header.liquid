@@ -1,7 +1,7 @@
 <header role="banner">
   <nav aria-label="Primary">
     <ul>
-      <li><a href="/">Home</a></li>
+      <li><a href="{{ '/' | url }}">Home</a></li>
       {%- for i in collections.primary %}
       <li><a href="{{ i.url | url }}" {% if page.url==i.url %}aria-current="page" {% endif %}>{{i.data.title}}</a>
         <ul>
