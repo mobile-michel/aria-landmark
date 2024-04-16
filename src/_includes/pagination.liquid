@@ -3,10 +3,10 @@
 {% assign nextPost = collections.secondary | getNextCollectionItem %}
 {% if nextPost or previousPost %}
 {% if previousPost %}
-<p>Previous post: <a role="button" href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></p>
+<p>Previous post: <a role="button" href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></p>
 {% endif %}
 {% if nextPost %}
-<p>Next post: <a role="button" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></p>
+<p>Next post: <a role="button" href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></p>
 {% endif %}
 {% endif %}
 </nav>

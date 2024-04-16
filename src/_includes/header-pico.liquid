@@ -7,11 +7,11 @@
       {%- for i in collections.primary %}
       <li>
         <details class="dropdown">
-          <summary><a href="{{i.url}}" {% if page.url==i.url %}aria-current="page" {% endif %}>{{i.data.title}}</a></summary>
+          <summary><a href="{{ i.url | url }}" {% if page.url==i.url %}aria-current="page" {% endif %}>{{i.data.title}}</a></summary>
         <ul>
           {%- for item in collections.secondary -%}
           {%- if i.fileSlug == item.data.fileslug %}
-          <li><a href="{{item.url}}" {% if page.url==item.url %}aria-current="page" {% endif %}>{{item.data.title}}</a></li>
+          <li><a href="{{ item.url | url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>{{item.data.title}}</a></li>
           {%- endif %}
           {%- endfor %}
         </ul>

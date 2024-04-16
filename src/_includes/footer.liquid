@@ -10,7 +10,7 @@
     <nav aria-label="Footer">
     <ul>
       {% for i in collections.primary %}
-      <li><a href="{{i.url}}" {% if page.url==i.url %}aria-current="page"{% endif %}>{{i.data.title}}</a></li>
+      <li><a href="{{ i.url | url }}" {% if page.url==i.url %}aria-current="page"{% endif %}>{{i.data.title}}</a></li>
       {% endfor %}
     </ul>
   </nav>

@@ -1,7 +1,7 @@
 {
-    "name": "01-basic-liquid-simple",
-    "description": "Eleventy 2.0.1 basic template with Liquid templating & Simple CSS framework.",
-    "github": "https://github.com/mobile-michel/01-basic-liquid-simple",
+    "name": "aria-landmarks",
+    "description": "Eleventy 2.0.1, Liquid, Simple.css & ARIA landmarks.",
+    "github": "https://github.com/mobile-michel/aria-landmark",
     "authorName": "Michel Maillard",
     "authorUrl": "https://michelmaillard.ch/",
     "favicon": "https://11ty.recipes/images/meta/favicon.svg",

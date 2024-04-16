@@ -4,7 +4,7 @@
         <ul>
             {%- for item in collections.secondary %}
             {%- if item.data.fileslug == fileslug %}
-            <li><a href="{{item.url}}" {% if page.url==item.url %}aria-current="page" {% endif %}>{{item.data.title}}</a></li>
+            <li><a href="{{ item.url | url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>{{item.data.title}}</a></li>
             {%- endif %}
             {%- endfor %}
         </ul>

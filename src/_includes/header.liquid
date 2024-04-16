@@ -3,11 +3,11 @@
     <ul>
       <li><a href="/">Home</a></li>
       {%- for i in collections.primary %}
-      <li><a href="{{i.url}}" {% if page.url==i.url %}aria-current="page" {% endif %}>{{i.data.title}}</a>
+      <li><a href="{{ i.url | url }}" {% if page.url==i.url %}aria-current="page" {% endif %}>{{i.data.title}}</a>
         <ul>
           {%- for item in collections.secondary -%}
           {%- if i.fileSlug == item.data.fileslug %}
-          <li><a href="{{item.url}}" {% if page.url==item.url %}aria-current="page" {% endif %}>{{item.data.title}}</a></li>
+          <li><a href="{{ item.url | url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>{{item.data.title}}</a></li>
           {%- endif %}
           {%- endfor %}
         </ul>
