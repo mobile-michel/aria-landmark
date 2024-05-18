@@ -1,5 +1,5 @@
 ---
-title: Landmarks
+title: landmarks
 description: ARIA Landmarks simplified
 layout: default
 tags: primary

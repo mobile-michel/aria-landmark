@@ -1,9 +1,9 @@
 <aside role="complementary" aria-labelledby="page-navigation">
-    <h3 id="page-navigation">{{ fileslug | capitalize }}</h3>
+    <h3 id="page-navigation">{{ navigation | capitalize }}</h3>
     <nav aria-label="Secondary">
         <ul>
             {%- for item in collections.secondary %}
-            {%- if item.data.fileslug == fileslug %}
+            {%- if item.data.navigation == navigation %}
             <li><a href="{{ item.url | url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>{{item.data.title}}</a></li>
             {%- endif %}
             {%- endfor %}

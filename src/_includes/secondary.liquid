@@ -1,7 +1,7 @@
 <p>This is the {{ title }}</p>
 <ul>
     {% for item in collections.secondary %}
-    {% if item.data.fileslug == title %}
+    {% if item.data.navigation == title %}
     <li><a href="{{ item.url | url }}">{{item.data.title}}</a></li>
     {% endif %}
     {% endfor %}

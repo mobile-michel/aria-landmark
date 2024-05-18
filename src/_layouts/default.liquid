@@ -3,14 +3,14 @@ layout: base
 ---
 {% include 'header' %}
 <main>
-  {% if fileslug %}
+  {% if tags contains 'secondary' %}
   {% include 'aside' %}
   {% endif %}
-  <section aria-labelledby="{{ title | remove:" " }}">
-    <h1 id="{{ title | remove:" " }}">{{ title | capitalize }}</h1>
+  <section aria-labelledby="{{ title | slug}}">
+    <h1 id="{{ title | slug }}">{{ title | capitalize }}</h1>
     {{ content }}
   </section>
-  {% if fileslug %}
+  {% if navigation %}
   {% include 'pagination' %}
   {% endif %}
 </main>
