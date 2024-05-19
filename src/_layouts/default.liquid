@@ -6,10 +6,10 @@ layout: base
   {% if tags contains 'secondary' %}
   {% include 'aside' %}
   {% endif %}
-  <section aria-labelledby="{{ title | slug}}">
+  <div aria-labelledby="{{ title | slug}}">
     <h1 id="{{ title | slug }}">{{ title | capitalize }}</h1>
     {{ content }}
-  </section>
+  </div>
   {% if navigation %}
   {% include 'pagination' %}
   {% endif %}

@@ -1,6 +1,6 @@
 {
     "name": "aria-landmarks",
-    "description": "Eleventy 2.0.1, Liquid, Simple.css & ARIA landmarks.",
+    "description": "Eleventy, Liquid, MVP.css with ARIA landmarks & dropdowns.",
     "github": "https://github.com/mobile-michel/aria-landmark",
     "authorName": "Michel Maillard",
     "authorUrl": "https://michelmaillard.ch/",

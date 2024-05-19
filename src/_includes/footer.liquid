@@ -1,10 +1,10 @@
 <footer>
-    <nav aria-label="Footer">
+  <nav aria-label="Footer">
     <ul>
-      {% for i in collections.primary %}
-      <li><a href="{{ i.url | url }}" {% if page.url==i.url %}aria-current="page"{% endif %}>{{i.data.title}}</a></li>
-      {% endfor %}
+      {%- for i in collections.primary %}
+      <li><a href="{{ i.url | url }}" {% if page.url==i.url %}aria-current="page" {% endif %}>{{i.data.title}}</a></li>
+      {%- endfor %}
     </ul>
   </nav>
-    <small>&copy; {{ "now" | date: "%Y" }} Built with <a href="https://www.11ty.dev/">Eleventy</a> & <a href="https://shopify.github.io/liquid/">Liquid</a> & <a href="https://simplecss.org">Simple.css</a> • <a href="{{site.authorUrl}}">{{site.authorName}}</a> • <a href="{{site.github}}">GitHub repo</a></small>
+  <small>&copy; {{ "now" | date: "%Y" }} Built with <a href="https://www.11ty.dev/">Eleventy</a> & <a href="https://liquidjs.com/">Liquid</a> & <a href="https://andybrewer.github.io/mvp/">MVP.css</a> • <a href="{{site.authorUrl}}">{{site.authorName}}</a> • <a href="{{site.github}}">GitHub repo</a></small>
 </footer>
